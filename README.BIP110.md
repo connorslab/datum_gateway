@@ -6,6 +6,11 @@ DATUM builds host-side PoW, packs Sia-class Blake2b work, and submits **164-byte
 
 **Lab / review fork — not an official OCEAN release.**
 
+The `bip110-pow-v2-sia-ready` branch includes native Sia JSON-RPC ID
+compatibility and enables maximum-target regtest share accounting by default.
+Set `stratum.accept_sia_regtest_shares` to `false` to disable that lab-only
+behavior.
+
 Branch: **`bip110-pow-v2`** on https://github.com/Maveth/datum_gateway
 
 Direction aligns with Luke (Discord): Gateway should be Blake2b-only; we’re not going back to SHA2 for PoW.
